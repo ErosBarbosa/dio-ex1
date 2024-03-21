@@ -1,0 +1,209 @@
+/* Cores */
+body {
+  background-color: white; /* Branco acinzentado */
+}
+
+.titulo-principal {
+  color: white; /* Dourado */
+}
+
+.texto-principal {
+  color: white; /* Cinza escuro */
+}
+
+.subtitulo {
+  color: white; /* Verde oliva */
+}
+
+.detalhe {
+  color: white; /* Dourado */
+}
+
+/* Fontes */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.titulo-principal, .subtitulo {
+  font-family: 'Roboto Slab', serif;
+}
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.secao {
+  margin-bottom: 40px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.titulo-secao {
+  margin-bottom: 20px;
+}
+
+.texto-secao {
+  line-height: 1.5;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #040023; /* Dourado */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.menu {
+  display: inline-block;
+}
+
+.menu a {
+  margin: 0 10px;
+  padding: 10px 15px;
+  color: #F9F8F4; /* Branco acinzentado */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.menu a:hover {
+  background-color: #F5E9DC; /* Bege claro */
+}
+
+/* Seções */
+.secao .titulo-secao {
+  font-size: 24px;
+}
+
+.secao .subtitulo {
+  font-size: 18px;
+}
+
+.secao .texto-secao {
+  font-size: 16px;
+}
+
+.secao img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.secao .lista {
+  list-style: none;
+  padding: 0;
+}
+
+.secao .lista li {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.secao .lista li:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #A97D42; /* Dourado */
+}
+
+/* Botões */
+
+.botao {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.botoes { 
+  text-align: center;
+}
+
+.botoes a {
+  margin: 10px; 
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.botao-primario {
+  background-color: 4caf50;
+  color: white;
+}
+
+.botao-primario:hover {
+  background-color: #4caf50; /* Verde oliva escuro */
+}
+
+.botao-secundario {
+  background-color: white; /* Branco acinzentado */
+  color: #4caf50; /* Verde oliva */
+  border: 1px solid #ddd;
+}
+
+.botao-secundario:hover {
+  background-color: white; /* Bege claro */
+}
+
+/* Rodapé */  
+footer { 
+  background-color: #E5E5E5; /* Cinza claro */
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  color: #666; /* Cinza médio */
+  font-size: 14px;
+  margin-bottom: 10px; 
+}
+
+footer a {
+  color: #587444; /* Verde Oliva */
+  text-decoration: none;
+}
+
+footer a:hover {
+    color: #485E3B; /* Verde Oliva Escuro */
+}
+
+/* Efeitos e Animações */
+.container a, .botao {
+  transition: all 0.3s ease; /* Transição suave para botões e links */
+}
+
+header img {
+  transition: all 0.3s ease; /* Transição para imagens no cabeçalho */
+}
+
+header img:hover {
+  transform: scale(1.05); /* Aumenta um pouco a imagem ao passar o mouse*/
+}
+
+/* Layout Responsivo (adapta-se à tela)*/
+@media (max-width: 768px) {
+  .container {
+    max-width: 95%;
+  }
+
+  /* Alterar organização de elementos se necessário */
+}
+
+@media (max-width: 600px) {
+  .menu {
+    display: block; /* Organiza o menu verticalmente */
+  }
+}
